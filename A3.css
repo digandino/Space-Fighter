@@ -1,0 +1,112 @@
+
+@font-face {
+	font-family: arcade-font-3;
+	src: url('arcade-font/04B_30__.ttf');
+}
+
+body {
+	background-color: #eeecde;
+	background-image: url(./elements/play2.png);
+	/* width: 100vh; */
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	color: white !important;
+	font-family: arcade-font-3 !important;
+}
+
+.header {
+	font-family: arcade-font-3;
+	margin-top: 15px;
+	margin-left: 10px;
+	color: white;
+}
+
+.grid-content {
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+.grid {
+	display: inline-grid;
+	grid-template-columns: repeat(8,40px);
+	gap: 0px;
+	border: 3px solid white;
+	padding: 0px;
+	margin: 0 auto;
+	/* margin-top: 50px;
+	margin-left: 50px; */
+	
+	
+	/* background-image: url("elements/bg-final.png"); */
+}
+@media (min-width: 992px) { .grid{grid-template-columns: repeat(8,80px);}}
+
+
+.cell {
+	height: 40px;
+}
+@media (min-width: 992px) { 
+	.cell {
+		height: 80px;
+	}
+}
+
+
+.player {
+	width: 40px;
+	height: 40px;
+	background-image: url("elements/spaceship25.gif");
+	background-size: cover;
+	transform: translateY(-40px);
+}
+@media (min-width: 992px) { 
+	.player {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+
+.enemy {
+	width: 40px;
+	height: 40px;
+	background-image: url("elements/meteor.gif");
+	background-size: cover;
+}
+@media (min-width: 992px) { 
+	.enemy {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+
+.gems {
+	width: 40px;
+	height: 40px;
+	background-image: url("elements/gems.gif");
+	background-size: cover;
+}
+@media (min-width: 992px) { 
+	.gems {
+		width: 80px;
+		height: 80px;
+	}
+}
+.remote {
+	visibility: hidden;
+	text-align: center;
+}
+.start {
+	text-align: center;
+}
+.nut {
+	width: 80px !important;
+	height: 80px !important;
+	border-radius: 50% !important;
+	background-color: transparent !important;
+}
